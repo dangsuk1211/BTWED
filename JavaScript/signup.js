@@ -82,7 +82,7 @@ function saveData() {
             password: passwordInput.value,
         };
         localStorage.setItem("userData", JSON.stringify(userData));
-        window.location.href = "login.html";
+        window.location.href = "Login.html";
         alert("Đăng Ký Thành Công");
 
     } else {
