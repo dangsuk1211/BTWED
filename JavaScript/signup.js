@@ -97,7 +97,7 @@ function login() {
     if (storedData) {
         var userData = JSON.parse(storedData);
         if (userInput.value == userData.name && passwordInput.value == userData.password) {
-            window.location.href = "./user.html";
+            window.location.href = "user.html";
             alert("Đăng nhập thành công");
         } else {
             alert("Email hoặc mật khẩu không đúng!");
