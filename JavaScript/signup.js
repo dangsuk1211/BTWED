@@ -14,7 +14,7 @@ function checkUserName() {
 function checkSDT() {
     var input = document.getElementById("txtsdt");
     var error = document.getElementById("sdt-error");
-    var pattern = /^[0][1-9]{9}$/;
+    var pattern = /^[0][0-9]{9}$/;
     if (!pattern.test(input.value)) {
         error.style.display = "block";
         return false;
