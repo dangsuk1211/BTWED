@@ -38,3 +38,17 @@ dots.forEach((li, key) => {
 window.onresize = function(event) {
     reloadSlider();
 };
+document.addEventListener("DOMContentLoaded", function() {
+    var cards = document.querySelectorAll(".card");
+
+    cards.forEach(function(card) {
+        card.addEventListener("mouseenter", function() {
+            this.style.transform = "translateY(-10px)";
+            this.style.transition = "transform 0.3s ease";
+        });
+
+        card.addEventListener("mouseleave", function() {
+            this.style.transform = "translateY(0)";
+        });
+    });
+});

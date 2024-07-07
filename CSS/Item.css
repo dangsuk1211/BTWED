@@ -29,6 +29,7 @@ ul.product li .product-top {
     overflow: hidden;
 }
 
+
 ul.product li .product-top a.buynow {
     text-decoration: none;
     text-align: center;
@@ -78,4 +79,68 @@ footer a {
 footer a:hover {
     color: black;
     text-decoration: none;
+}
+h3{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+h3:hover{
+    color: blue;
+}
+
+strong {
+    font-size: 18px;
+    display: block;
+    color: #ED1C24;
+    font-weight: bold;
+    line-height: 24px;
+}
+.linethough{
+    color: #999999;
+    text-decoration-line: line-through;
+    font-size: 14px;
+}
+.-disc{
+    background: #f9e9e2;
+    border-radius: 2px;
+    color: #ef5555;
+    margin-left: 10px;
+    padding: 2px 2px;
+    font-size: 12px;
+}
+.item_httt:before {
+    content: '●';
+    margin-right: 4px;
+    margin-bottom: 2px;
+    color: #333;
+    font-size: 10px;
+}
+.nd_t {
+ padding: 0 10px;
+}
+a{
+color: inherit;
+text-decoration: none;
+}
+
+.product-item h3.hovered {
+color: blue; /* Màu chữ khi hover */
+}
+
+.product-item {
+transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+transform: scale(1.05); /* Thu nhỏ hình ảnh đi một chút */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
 }
